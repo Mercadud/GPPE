@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://151rga3oai56"]
+
+[ext_resource type="Script" path="res://Scripts/Nodes/BaseNode.gd" id="1_scvqw"]
+
+[node name="BaseNode" type="GraphNode"]
+offset_right = 201.0
+offset_bottom = 67.0
+title = "Base Node"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 0, 0.172549, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(0, 1, 0.00392157, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+script = ExtResource("1_scvqw")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 18.0
+offset_top = 42.0
+offset_right = 183.0
+offset_bottom = 73.0
+placeholder_text = "Name"
