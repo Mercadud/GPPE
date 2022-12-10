@@ -1,151 +1,61 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5jihpss8x6t4"]
+[gd_scene load_steps=2 format=3]
 
-[ext_resource type="PackedScene" uid="uid://151rga3oai56" path="res://Scenes/Nodes/BaseNode.tscn" id="1_vpy0n"]
-
-[node name="main" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="PanelContainer" type="PanelContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-metadata/_edit_layout_mode = 1
-
-[node name="MainWindow" type="VSplitContainer" parent="PanelContainer"]
-offset_right = 1024.0
-offset_bottom = 600.0
-dragger_visibility = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MainWindow"]
-offset_right = 1024.0
-offset_bottom = 31.0
-
-[node name="MenuButton" type="MenuButton" parent="PanelContainer/MainWindow/HBoxContainer"]
-offset_right = 35.0
-offset_bottom = 31.0
-text = "File"
-
-[node name="MenuButton2" type="MenuButton" parent="PanelContainer/MainWindow/HBoxContainer"]
-offset_left = 39.0
-offset_right = 77.0
-offset_bottom = 31.0
-text = "Edit"
-
-[node name="Label" type="Label" parent="PanelContainer/MainWindow/HBoxContainer"]
-offset_left = 81.0
-offset_top = 2.0
-offset_right = 1024.0
-offset_bottom = 28.0
-size_flags_horizontal = 3
-text = "GPPE v0.1"
-horizontal_alignment = 2
-vertical_alignment = 1
-
-[node name="Editor" type="VSplitContainer" parent="PanelContainer/MainWindow"]
-offset_top = 31.0
-offset_right = 1024.0
-offset_bottom = 600.0
-split_offset = 401
-
-[node name="GraphEdit" type="GraphEdit" parent="PanelContainer/MainWindow/Editor"]
-offset_right = 1024.0
-offset_bottom = 401.0
-panning_scheme = 1
-connection_lines_curvature = 0.0
-minimap_enabled = false
-
-[node name="BaseNode" parent="PanelContainer/MainWindow/Editor/GraphEdit" instance=ExtResource("1_vpy0n")]
-offset_left = 179.0
-offset_top = 151.0
-offset_right = 380.0
-offset_bottom = 236.0
-mouse_filter = 1
-position_offset = Vector2(179, 151)
-
-[node name="BaseNode2" parent="PanelContainer/MainWindow/Editor/GraphEdit" instance=ExtResource("1_vpy0n")]
-offset_left = 495.0
-offset_top = 151.0
-offset_right = 696.0
-offset_bottom = 236.0
-mouse_filter = 1
-position_offset = Vector2(495, 151)
-
-[node name="HSplitContainer" type="HSplitContainer" parent="PanelContainer/MainWindow/Editor"]
-offset_top = 413.0
-offset_right = 1024.0
-offset_bottom = 569.0
+[ext_resource type="PackedScene" uid="uid://151rga3oai56" path="res://Scenes/Nodes/base_node.tscn" id="1_vpy0n"]
+me="HSplitContainer" type="HSplitContainer" parent="PanelContainer/MainWindow/Editor"]
+layout_mode = 2
 
 [node name="NodesContainer" type="VBoxContainer" parent="PanelContainer/MainWindow/Editor/HSplitContainer"]
-offset_right = 506.0
-offset_bottom = 156.0
+layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="PanelContainer/MainWindow/Editor/HSplitContainer/NodesContainer"]
-offset_right = 506.0
-offset_bottom = 26.0
+layout_mode = 2
 text = "Nodes"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/MainWindow/Editor/HSplitContainer/NodesContainer"]
-offset_top = 30.0
-offset_right = 506.0
-offset_bottom = 156.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MainWindow/Editor/HSplitContainer/NodesContainer/ScrollContainer"]
-offset_right = 506.0
-offset_bottom = 126.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
 [node name="ItemList" type="ItemList" parent="PanelContainer/MainWindow/Editor/HSplitContainer/NodesContainer/ScrollContainer/VBoxContainer"]
-offset_right = 506.0
-offset_bottom = 126.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 same_column_width = true
 
 [node name="EditContainer" type="VBoxContainer" parent="PanelContainer/MainWindow/Editor/HSplitContainer"]
-offset_left = 518.0
-offset_right = 1024.0
-offset_bottom = 156.0
+layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="PanelContainer/MainWindow/Editor/HSplitContainer/EditContainer"]
-offset_right = 506.0
-offset_bottom = 26.0
+layout_mode = 2
 text = "Edit"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/MainWindow/Editor/HSplitContainer/EditContainer"]
-offset_top = 30.0
-offset_right = 506.0
-offset_bottom = 156.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MainWindow/Editor/HSplitContainer/EditContainer/ScrollContainer"]
-offset_right = 506.0
-offset_bottom = 126.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
 [node name="ItemList" type="ItemList" parent="PanelContainer/MainWindow/Editor/HSplitContainer/EditContainer/ScrollContainer/VBoxContainer"]
-offset_right = 506.0
-offset_bottom = 126.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 same_column_width = true

@@ -10,6 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Godot 4"
-config/features=PackedStringArray("4.0", "Vulkan Clustered")
+config/name="GPPE"
+run/main_scene="res://Scenes/Menu/main.tscn"
+config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"

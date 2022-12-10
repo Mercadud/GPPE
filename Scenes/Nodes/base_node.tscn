@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Nodes/BaseNode.gd" id="1_scvqw"]
 
-[node name="BaseNode" type="GraphNode"]
+[node name="Base Node" type="GraphNode"]
 offset_right = 201.0
 offset_bottom = 67.0
 title = "Base Node"
@@ -18,8 +18,5 @@ slot/0/draw_stylebox = true
 script = ExtResource("1_scvqw")
 
 [node name="LineEdit" type="LineEdit" parent="."]
-offset_left = 18.0
-offset_top = 42.0
-offset_right = 183.0
-offset_bottom = 73.0
+layout_mode = 2
 placeholder_text = "Name"
